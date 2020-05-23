@@ -1,0 +1,10 @@
+{
+    "C_Cpp.errorSquiggles": "Disabled",
+    "files.associations": {
+        "iostream": "cpp",
+        "unordered_set": "cpp",
+        "*.tcc": "cpp",
+        "list": "cpp",
+        "string": "cpp"
+    }
+}
