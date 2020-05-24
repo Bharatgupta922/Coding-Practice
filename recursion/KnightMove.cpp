@@ -25,8 +25,8 @@ bool solveKnigtMove(int board[D][D], int n, int move_no, int curRow, int curCol)
     if (move_no == n * n)
         return true;
 
- static  int rowDir[] = {2, 1, -1, -2, -2, -1, 1, 2};
- static  int colDir[] = {1, 2, 2, 1, -1, -2, -2, -1};
+    static int rowDir[] = {2, 1, -1, -2, -2, -1, 1, 2};
+    static int colDir[] = {1, 2, 2, 1, -1, -2, -2, -1};
     for (int curDir = 0; curDir < 8; ++curDir)
     {
         int nextRow = curRow + rowDir[curDir];
@@ -38,7 +38,7 @@ bool solveKnigtMove(int board[D][D], int n, int move_no, int curRow, int curCol)
             bool isSuccesfull = solveKnigtMove(board, n, move_no + 1, nextRow, nextCol);
             if (isSuccesfull == true)
                 return true;
-            board[nextRow][nextCol] = 0; // erase the knight  //backtracking step 
+            board[nextRow][nextCol] = 0; // erase the knight  //backtracking step
         }
     }
     return false;
