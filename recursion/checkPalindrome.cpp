@@ -1,18 +1,19 @@
 #include <iostream>
+#include<cmath>
 using namespace std;
-bool oneDigit(int n)
-{
-    return n >= 0 && n < 10;
+int reverse (int num){
+if(num==0)return 0;
+return (num%10)*pow(10,(int)log10(num)) + reverse(num/10);
 }
-bool checkPalindrome(int num, int duplicate)
+bool checkPalindrome(int num)
 {
-    if (oneDigit(num))
-        return true;
+  if(num==reverse(num))return true;
+  return false;  
 }
 int main()
 {
     int n;
     cin >> n;
-    checkPalindrome(n, 0, (int)log10(n)) ? cout << "Palindrome" : cout << "not palindrome";
+    checkPalindrome(n) ? cout << "Palindrome" : cout << "not palindrome";
     return 0;
 }
