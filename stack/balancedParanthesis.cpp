@@ -8,6 +8,8 @@ the gist is that the
 #include <iostream>
 #include <stack>
 #include <string>
+#include<vector>
+
 using namespace std;
 int main()
 {

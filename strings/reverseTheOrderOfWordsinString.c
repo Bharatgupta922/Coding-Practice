@@ -2,7 +2,8 @@
 #include <string.h>
 int main()
 {
-    char str[100] = "codequotiennt loves codes";
+    char str[100] ;
+    scanf("%[^\n]s", str);
     char ans[100] = "";
     int i = strlen(str) - 1, y = 0;
     while (i >= 0)
