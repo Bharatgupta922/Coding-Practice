@@ -7,6 +7,8 @@
         "list": "cpp",
         "string": "cpp",
         "stack": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "cmath": "cpp",
+        "climits": "cpp"
     }
 }
