@@ -80,7 +80,6 @@ void printHeap(int A[MAX_limit], int n)
     cout << endl;
 }
 
-//galati h isme func me chutiye
 void increase_key(int A[MAX_limit], int i, int key)
 {
     if (key < A[i])
@@ -134,4 +133,4 @@ int main()
     }
 
     return 0;
-}   
+}
