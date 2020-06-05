@@ -44,7 +44,7 @@ void Heapify(int A[MAX_limit], int i, int n)
 }
 void Build_Max_Heap(int A[MAX_limit], int n)
 {
-    for (int i = floor(n / 2) - 1; i >= 0; --i)
+    for (int i = floor(n / 2) - 1; i >= 0; --i)//floor(n/2)-1 gives the index of last leave
     {
         Heapify(A, i, n);
     }
