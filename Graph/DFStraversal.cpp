@@ -2,8 +2,12 @@
 #include <vector>
 #include <list>
 using namespace std;
+
 void addEdge(vector<int> adj[], int u, int v)
 {
+    // because it is undirected 
+    //if one is removed the output will be different
+    
     adj[u].push_back(v);
     adj[v].push_back(u);
 }
