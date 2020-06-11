@@ -1,4 +1,9 @@
-#include <bits/stdc++.h>
+#include<iostream>
+#include<climits>
+#include<utility>
+#include<vector>
+#include<set>
+#include<list>
 using namespace std;
 void addEdge(list<pair<int, int>> adj[], int u, int v, int weight)
 {
