@@ -7,7 +7,7 @@ void addEdge(vector<int> adj[], int u, int v)
     adj[u].push_back(v);
     adj[v].push_back(u);
 }
-    
+
 bool CheckByDFS(vector<int> adj[], int source, int n, bool visited[], int parent)
 {
 
@@ -36,7 +36,7 @@ bool check(vector<int> adj[], int source, int n)
     for (int i = 0; i < n; i++)
     {
         visited[i] = false;
-    }
+    } 
     for (int u = source; u < n; ++u)
     {
         if (!visited[u])
