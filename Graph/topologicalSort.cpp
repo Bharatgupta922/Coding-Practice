@@ -2,7 +2,8 @@
 #include<stack>
 #include<vector>
 // this is DFS algorithm 
-
+///topological soring only works for Directed Acyclic Graph 
+//so it is also used to detect 
 using namespace std ;
 void addEdge(vector<int> vec[] ,char u , char v){
     //since it is undirected graph 
