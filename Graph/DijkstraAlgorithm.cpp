@@ -15,7 +15,7 @@ void ShortestPath(list<pair<int, int>> adj[], int src, int n)
     vector<int> dist(n, INT_MAX); //n number of elements in vector with all initialised to INT_MAX
     dist[src] = 0;
     set<pair<int, int>> setds;
-    setds.insert(make_pair(dist[src], src)); //as we want to sort w.r.t distance
+    setds.insert(make_pair(dist[src], src));     //as we want to sort w.r.t distance
     while (!setds.empty())
     {
         pair<int, int> temp = *setds.begin();
