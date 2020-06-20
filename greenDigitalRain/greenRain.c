@@ -87,7 +87,7 @@ int main(void)
 
     /* Trails */
     for (int i = 0; i < WIDTH; ++i)
-        if (i % 2 == 0)
+    if(i%2)
             init_trail(&trails[i]);
 
     /* Matrix */

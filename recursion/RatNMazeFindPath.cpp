@@ -13,7 +13,7 @@ bool PathUtil(int *a, int i, int j, int x, int y, int rows, int cols, string s, 
     {
         return false;
     }
-    if (i == x && j == x)
+    if (i == x && j == y)
     {
         vec.push_back(s);
         return true;
@@ -28,28 +28,36 @@ bool PathUtil(int *a, int i, int j, int x, int y, int rows, int cols, string s, 
         s.pop_back();
     return up || down || left || right;
 }
-vector<string> paths(int *a, int i, int j, int x, int y, int rows, int cols)
+vector<string> printPath(int *a, int i, int j, int x, int y, int rows, int cols)
 {
     bool visited[rows][cols];
     vector<string> vec;
     bool success = PathUtil(a, i, j, x, y, rows, cols, "", &visited[0][0], vec);
-    sort(vec.begin(), vec.end());
+    if(success){
+        sort(vec.begin(), vec.end());
+        }
     return vec;
 }
 int main()
 {
-    int n = 5;
-    int a[n][n] = {{1, 0, 0, 0, 0},
-                   {1, 1, 1, 1, 1},
-                   {1, 1, 1, 0, 1},
-                   {0, 0, 0, 0, 1},
-                   {0, 0, 0, 0, 1}};
+    int n = 4;
+    // int a[n][n] = {{1, 0, 0, 0, 0},
+    //                {1, 1, 1, 1, 1},
+    //                {1, 1, 1, 0, 1},
+    //                {0, 0, 0, 0, 1},
+    //                {0, 0, 0, 0, 1}};
+
+   int a[n][n] = { {1, 0, 0, 0 },{1 ,1, 0 ,1},{ 0 ,1 ,0 ,0}, {0 ,1 ,1 ,1}};
     int rows = sizeof(a) / sizeof(a[0]);
     int cols = sizeof(a[0]) / sizeof(a[0][0]);
-    vector<string> vec = paths(&a[0][0], 0, 0, n - 1, n - 1, rows, cols);
-    for (vector<string>::iterator it = vec.begin(); it != vec.end(); ++it)
+    vector<string> vec = printPath(&a[0][0], 0, 0, n - 1, n - 1, rows, cols);
+    if(vec.size()==0)cout<<"-1"<<endl;
+    else {
+ for (vector<string>::iterator it = vec.begin(); it != vec.end(); ++it)
     {
         cout << *it << endl;
     }
+    }
+   
     return 0;
 }
