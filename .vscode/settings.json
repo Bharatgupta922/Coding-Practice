@@ -9,6 +9,7 @@
         "stack": "cpp",
         "vector": "cpp",
         "cmath": "cpp",
-        "climits": "cpp"
+        "climits": "cpp",
+        "ostream": "cpp"
     }
 }
