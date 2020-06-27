@@ -5,7 +5,7 @@
 
 #define WIDTH 160
 #define HEIGHT 40
-
+ 
 #define idx(a, b) ((a) + WIDTH * (b))
 
 //user defined datatype
@@ -44,7 +44,7 @@ void update_rain(CHAR_INFO consoleBuffer[])
         // pointer starts with zero
 
         int end = trails[x].end > HEIGHT ? HEIGHT : (int)trails[x].end;
-        //pointer ends with the height of last trail + random height assigned for the space above
+        //pointer ends with the height of last trail. + random height assigned for the space above
         for (int y = start; y < end; y++)
             consoleBuffer[idx(x, y)] = (CHAR_INFO){
                 .Char.AsciiChar = rand() % 256, .Attributes = FOREGROUND_GREEN | (y < (int)trails[x].end - 1 ? 0 : 0x0004 | 0x0001)};
@@ -81,6 +81,7 @@ int main(void)
 
     COORD charBufSize = {WIDTH, HEIGHT};
     COORD characterPos = {0, 0};
+
     //initiation
     SMALL_RECT write = {0, 0, WIDTH - 1, HEIGHT - 1};
     //defining rectangle to write
