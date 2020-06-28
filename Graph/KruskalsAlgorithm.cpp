@@ -11,11 +11,15 @@ public:
     int weight;
 };
 
+//comparater function
+//which used as call back function
+//to sort according to weights of the edge
 bool compare(Edge e1, Edge e2)
 {
     return e1.weight < e2.weight;
 }
 
+//this will find the parent of every node
 int findParent(int v, int *parent)
 {
     if (parent[v] == v)
@@ -30,7 +34,9 @@ void KrusKals(Edge *edge, int n, int E)
     //sort the array on the basis of weight
     sort(edge, edge + E, compare);
 
+    //output array
     Edge *output = new Edge[n - 1];
+    //parent array used to detect the cycle in the graph
     int *parent = new int[n];
 
     for (int i = 0; i < n; ++i)
@@ -46,15 +52,19 @@ void KrusKals(Edge *edge, int n, int E)
         ///check if we can add this edge in the mst
         int srcParent = findParent(currEdge.src, parent);
         int destParent = findParent(currEdge.dest, parent);
-        if (srcParent != destParent)
+        if (srcParent != destParent) // if true  then it is safe i.e no cycle
         {
+            //insert in the output array
             output[count] = currEdge;
             ++count;
+            //now change the parent b/c these are connected
+            //for future use
             parent[srcParent] = destParent;
         }
         ++i;
     }
 
+    //print the array
     for (int i = 0; i < n - 1; ++i)
     {
         cout << output[i].src << " -- " << output[i].dest << " = " << output[i].weight << endl;
@@ -94,6 +104,7 @@ int main()
     int n, E;
     cin >> n >> E;
     Edge *edge = new Edge[E];
+
     for (int i = 0; i < E; ++i)
     {
         int s, d, w;
@@ -102,6 +113,7 @@ int main()
         edge[i].dest = d;
         edge[i].weight = w;
     }
+
     KrusKals(edge, n, E);
     return 0;
 }
