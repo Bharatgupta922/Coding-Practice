@@ -2,10 +2,26 @@
 // Given a string with repeated characters, the task is to rearrange characters
 // in a string so that no two adjacent characters are same.
 
+
+//sample test cases 
+
+// Input: aaabc 
+// Output: abaca 
+
+// Input: aaabb
+// Output: ababa 
+
+// Input: aa 
+// Output: Not Possible
+
+// Input: aaaabc 
+// Output: Not Possible
+
+
 #include <bits/stdc++.h>
 using namespace std;
-//this class or structure makes the priority queue 
-//sort by second element of pair 
+//this class or structure makes the priority queue
+//sort by second element of pair
 struct myComp
 {
     constexpr bool operator()(pair<int, int> const &a, pair<int, int> const &b)
@@ -51,7 +67,7 @@ void rearrange(string s)
     }
     else
     {
-        cout << "it cannnot be reagganged !" << endl;
+        cout << "it cannnot be rearranged!" << endl;
     }
 }
 int main()

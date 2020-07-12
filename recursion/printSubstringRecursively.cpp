@@ -9,7 +9,7 @@ void printSub(string s, string curr = "", int index = 0)
              << " ";
         return;
     }
-  printSub(s, curr, index + 1);
+    printSub(s, curr, index + 1);
     printSub(s, curr + s[index], index + 1);
       
 }
