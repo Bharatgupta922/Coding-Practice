@@ -16,4 +16,4 @@ int main()
     cin >> a >> b;
     cout << getAns(a, b);
     return 0;
-}
+}           
