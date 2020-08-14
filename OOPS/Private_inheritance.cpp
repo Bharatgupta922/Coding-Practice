@@ -1,7 +1,6 @@
 #include <iostream>
 
-using namesppace std;
-
+using namespace std;
 
 class Person
 {
