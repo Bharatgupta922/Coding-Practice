@@ -1,0 +1,12 @@
+D:\data structure\Blazorproj\Assignment\Assignment\Shared\bin\Debug\net5.0\Assignment.Shared.deps.json
+D:\data structure\Blazorproj\Assignment\Assignment\Shared\bin\Debug\net5.0\Assignment.Shared.dll
+D:\data structure\Blazorproj\Assignment\Assignment\Shared\bin\Debug\net5.0\ref\Assignment.Shared.dll
+D:\data structure\Blazorproj\Assignment\Assignment\Shared\bin\Debug\net5.0\Assignment.Shared.pdb
+D:\data structure\Blazorproj\Assignment\Assignment\Shared\obj\Debug\net5.0\Assignment.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\data structure\Blazorproj\Assignment\Assignment\Shared\obj\Debug\net5.0\Assignment.Shared.AssemblyInfoInputs.cache
+D:\data structure\Blazorproj\Assignment\Assignment\Shared\obj\Debug\net5.0\Assignment.Shared.AssemblyInfo.cs
+D:\data structure\Blazorproj\Assignment\Assignment\Shared\obj\Debug\net5.0\Assignment.Shared.csproj.CoreCompileInputs.cache
+D:\data structure\Blazorproj\Assignment\Assignment\Shared\obj\Debug\net5.0\Assignment.Shared.dll
+D:\data structure\Blazorproj\Assignment\Assignment\Shared\obj\Debug\net5.0\ref\Assignment.Shared.dll
+D:\data structure\Blazorproj\Assignment\Assignment\Shared\obj\Debug\net5.0\Assignment.Shared.pdb
+D:\data structure\Blazorproj\Assignment\Assignment\Shared\obj\Debug\net5.0\Assignment.Shared.csproj.AssemblyReference.cache

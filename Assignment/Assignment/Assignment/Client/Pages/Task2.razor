@@ -1,0 +1,92 @@
+﻿@page "/assignment2"
+
+@inject HttpClient Http
+
+<h3>Task2</h3>
+<div class="row">
+    <div class="col-lg-3">
+        <EditForm Model="@sms">
+            <div>
+                <label>From sms :</label>
+                <div>
+                    <InputText @bind-Value="@sms.FromNumber" />
+                </div>
+            </div>
+            <div>
+                <label>To sms :</label>
+                <div>
+                    <InputText @bind-Value="@sms.ToNumber" />
+                </div>
+            </div>
+            <div>
+                <label>Sender Id :</label>
+                <div>
+                    <InputText @bind-Value="@sms.SenderId" />
+                </div>
+            </div>
+            <div>
+                <label>Message :</label>
+                <div>
+                    <InputTextArea @bind-Value="@sms.Message" />
+                </div>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-success" @onclick="@sendsms">
+                    Send SMS
+                </button>
+            </div>
+        </EditForm>
+    </div>
+    <div class="col-lg-9">
+        @if (smss == null)
+        {
+            <p><em>Loading...</em></p>}
+        else
+        {
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var mail in smss)
+                    {
+                    <tr>
+                        <td>@mail.ID</td>
+                        <td>@mail.FromNumber</td>
+                        <td>@mail.ToNumber</td>
+                        <td>@mail.Date.ToShortDateString()</td>
+                        <td style="@(mail.Status == "failed"? $"background:Red;" : $"background:green;")">@mail.Status</td>
+                    </tr>
+                    }
+                </tbody>
+            </table>
+
+        }
+    </div>
+</div>
+
+
+@code {
+
+    public SMS sms { get; set; }
+    private SMS[] smss;
+
+    protected override async Task OnInitializedAsync()
+    {
+        sms = new SMS();
+        sms.Date = DateTime.Now;
+        sms.Status = "";
+        smss = await Http.GetFromJsonAsync<SMS[]>("Services");
+    }
+    public void sendsms()
+    {
+        Http.PostAsJsonAsync<SMS>("Services", sms);
+        StateHasChanged();
+    }
+}
