@@ -9,8 +9,8 @@ int PathUtil(int *a, int i, int j, int x, int y, int rows, int cols, bool *visit
 {
     if (i == x && j == y)
     {
-        return 0;
-    }   
+        return 1;
+    }
     if (!isSafe(a, i, j, rows, cols, visited))
         return 10000;
     *((visited + i * cols) + j) = true;
@@ -37,9 +37,11 @@ int main()
                    {0, 0, 0, 0, 1}};
     int rows = sizeof(a) / sizeof(a[0]);
     int cols = sizeof(a[0]) / sizeof(a[0][0]);
-    cout<<"The Shortest path : ";
-    int result = shortestPath(&a[0][0], 0, 0, 4, 0, rows, cols);
-if(result>=10000)cout<<"no path possible"<<endl;
-else cout<<result<<endl;
+    cout << "The Shortest path : ";
+    int result = shortestPath(&a[0][0], 0, 0, 4, 4, rows, cols);
+    if (result >= 10000)
+        cout << "no path possible" << endl;
+    else
+        cout << result << endl;
     return 0;
 }

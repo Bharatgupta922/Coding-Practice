@@ -33,9 +33,10 @@ vector<string> printPath(int *a, int i, int j, int x, int y, int rows, int cols)
     bool visited[rows][cols];
     vector<string> vec;
     bool success = PathUtil(a, i, j, x, y, rows, cols, "", &visited[0][0], vec);
-    if(success){
+    if (success)
+    {
         sort(vec.begin(), vec.end());
-        }
+    }
     return vec;
 }
 int main()
@@ -47,17 +48,19 @@ int main()
     //                {0, 0, 0, 0, 1},
     //                {0, 0, 0, 0, 1}};
 
-   int a[n][n] = { {1, 0, 0, 0 },{1 ,1, 0 ,1},{ 0 ,1 ,0 ,0}, {0 ,1 ,1 ,1}};
+    int a[n][n] = {{1, 0, 0, 0}, {1, 1, 0, 1}, {0, 1, 0, 0}, {0, 1, 1, 1}};
     int rows = sizeof(a) / sizeof(a[0]);
     int cols = sizeof(a[0]) / sizeof(a[0][0]);
     vector<string> vec = printPath(&a[0][0], 0, 0, n - 1, n - 1, rows, cols);
-    if(vec.size()==0)cout<<"-1"<<endl;
-    else {
- for (vector<string>::iterator it = vec.begin(); it != vec.end(); ++it)
+    if (vec.size() == 0)
+        cout << "-1" << endl;
+    else
     {
-        cout << *it << endl;
+        for (vector<string>::iterator it = vec.begin(); it != vec.end(); ++it)
+        {
+            cout << *it << endl;
+        }
     }
-    }
-   
+
     return 0;
 }

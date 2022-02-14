@@ -8,9 +8,9 @@ private:
 
 public:
     //default arguments
-    Man(string iname = "no name", int iage = 0)
+    Man(string iname = "no name", int iage = 0) // overloaded
     {
-        cout << "This is a overloaded constructor constructor" << endl;
+        cout << "This is a overloaded default constructor constructor" << endl;
         name = iname;
         age = iage;
     }

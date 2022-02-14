@@ -2,7 +2,6 @@
 
 using namespace std;
 
-
 void printBoard(int board[10][10], int n)
 {
     cout << "[";
@@ -18,7 +17,6 @@ void printBoard(int board[10][10], int n)
     }
     cout << "] ";
 }
-
 
 bool isSafe(int board[10][10], int i, int j, int n)
 {
@@ -46,8 +44,6 @@ bool isSafe(int board[10][10], int i, int j, int n)
     return true;
 }
 
-
-
 bool nqueen(int board[10][10], int i, int n)
 {
     if (i == n)
@@ -68,7 +64,6 @@ bool nqueen(int board[10][10], int i, int n)
     return res;
 }
 
-
 void solve(int n)
 {
     int board[10][10];
@@ -80,7 +75,6 @@ void solve(int n)
     cout << endl;
     return;
 }
-
 
 int main()
 {

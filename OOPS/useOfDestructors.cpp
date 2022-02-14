@@ -1,30 +1,36 @@
-#include<iostream>
-using namespace std ;
-class Man{
-    private :
-    string * name ;
-    int * age;
-    public:
-    Man(string iname , int iage){
+#include <iostream>
+using namespace std;
+class Man
+{
+private:
+    string *name;
+    int *age;
+
+public:
+    Man(string iname, int iage)
+    {
         name = new string;
         age = new int;
 
-        *name = iname ;
-        *age  = iage ; 
-        cout<<"constructor called and memory allocated"<<endl;
+        *name = iname;
+        *age = iage;
+        cout << "constructor called and memory allocated" << endl;
     }
-    void display(){
-    cout<<"Hi i am " <<*name<< " i am "<<*age<<" years old"<<endl;
+    void display()
+    {
+        cout << "Hi i am " << *name << " i am " << *age << " years old" << endl;
     }
-    ~Man(){
+    ~Man()
+    {
         delete name;
         delete age;
-        cout<<"All memory is released"<<endl;
+        cout << "All memory is released" << endl;
     }
 };
-int main(){
-    Man *bharat = new Man("Bharat Gupta" , 19);
+int main()
+{
+    Man *bharat = new Man("Bharat Gupta", 19);
     bharat->display();
-delete bharat;
+    delete bharat;
     return 0;
 }

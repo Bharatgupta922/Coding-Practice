@@ -3,7 +3,7 @@ using namespace std;
 class Man
 {
 public:
-    static int count; 
+    static int count;
     Man()
     {
         ++count;
@@ -19,6 +19,9 @@ int main()
 {
     cout << Man::count;
     Man bharat;
+    Man anjali;
+    Man rishabh;
+    Man anil;
     bharat.TotalMan();
     return 0;
 }

@@ -10,3 +10,15 @@ D:\data structure\Blazorproj\Assignment\Assignment\Shared\obj\Debug\net5.0\Assig
 D:\data structure\Blazorproj\Assignment\Assignment\Shared\obj\Debug\net5.0\ref\Assignment.Shared.dll
 D:\data structure\Blazorproj\Assignment\Assignment\Shared\obj\Debug\net5.0\Assignment.Shared.pdb
 D:\data structure\Blazorproj\Assignment\Assignment\Shared\obj\Debug\net5.0\Assignment.Shared.csproj.AssemblyReference.cache
+C:\Users\mike\Documents\c_c++Codes\Assignment\Assignment\Assignment\Shared\bin\Debug\net5.0\Assignment.Shared.deps.json
+C:\Users\mike\Documents\c_c++Codes\Assignment\Assignment\Assignment\Shared\bin\Debug\net5.0\Assignment.Shared.dll
+C:\Users\mike\Documents\c_c++Codes\Assignment\Assignment\Assignment\Shared\bin\Debug\net5.0\ref\Assignment.Shared.dll
+C:\Users\mike\Documents\c_c++Codes\Assignment\Assignment\Assignment\Shared\bin\Debug\net5.0\Assignment.Shared.pdb
+C:\Users\mike\Documents\c_c++Codes\Assignment\Assignment\Assignment\Shared\obj\Debug\net5.0\Assignment.Shared.csproj.AssemblyReference.cache
+C:\Users\mike\Documents\c_c++Codes\Assignment\Assignment\Assignment\Shared\obj\Debug\net5.0\Assignment.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mike\Documents\c_c++Codes\Assignment\Assignment\Assignment\Shared\obj\Debug\net5.0\Assignment.Shared.AssemblyInfoInputs.cache
+C:\Users\mike\Documents\c_c++Codes\Assignment\Assignment\Assignment\Shared\obj\Debug\net5.0\Assignment.Shared.AssemblyInfo.cs
+C:\Users\mike\Documents\c_c++Codes\Assignment\Assignment\Assignment\Shared\obj\Debug\net5.0\Assignment.Shared.csproj.CoreCompileInputs.cache
+C:\Users\mike\Documents\c_c++Codes\Assignment\Assignment\Assignment\Shared\obj\Debug\net5.0\Assignment.Shared.dll
+C:\Users\mike\Documents\c_c++Codes\Assignment\Assignment\Assignment\Shared\obj\Debug\net5.0\ref\Assignment.Shared.dll
+C:\Users\mike\Documents\c_c++Codes\Assignment\Assignment\Assignment\Shared\obj\Debug\net5.0\Assignment.Shared.pdb

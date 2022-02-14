@@ -34,10 +34,11 @@ namespace Assignment.Server.Models
                 smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
                 smtp.Send(emailmsg);
                 email.Status = "sent";
-             
-                
+
+
             }
-            catch (Exception e) {
+            catch (Exception e)
+            {
                 email.Status = "failed";
             }
             await appDbContext.Emails.AddAsync(email);

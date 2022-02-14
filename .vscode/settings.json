@@ -1,15 +1,3 @@
 {
-    "C_Cpp.errorSquiggles": "Disabled",
-    "files.associations": {
-        "iostream": "cpp",
-        "unordered_set": "cpp",
-        "*.tcc": "cpp",
-        "list": "cpp",
-        "string": "cpp",
-        "stack": "cpp",
-        "vector": "cpp",
-        "cmath": "cpp",
-        "climits": "cpp",
-        "ostream": "cpp"
-    }
+    "C_Cpp.errorSquiggles": "Enabled"
 }

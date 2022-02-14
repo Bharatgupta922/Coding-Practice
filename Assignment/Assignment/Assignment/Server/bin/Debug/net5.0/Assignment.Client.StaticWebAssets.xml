@@ -1,4 +1,4 @@
 ﻿<StaticWebAssets Version="1.0">
-  <ContentRoot BasePath="/" Path="D:\data structure\Blazorproj\Assignment\Assignment\Client\bin\Debug\net5.0\wwwroot\" />
-  <ContentRoot BasePath="/" Path="D:\data structure\Blazorproj\Assignment\Assignment\Client\obj\Debug\net5.0\scopedcss\bundle\" />
+  <ContentRoot BasePath="/" Path="C:\Users\mike\Documents\c_c++Codes\Assignment\Assignment\Assignment\Client\bin\Debug\net5.0\wwwroot\" />
+  <ContentRoot BasePath="/" Path="C:\Users\mike\Documents\c_c++Codes\Assignment\Assignment\Assignment\Client\obj\Debug\net5.0\scopedcss\bundle\" />
 </StaticWebAssets>

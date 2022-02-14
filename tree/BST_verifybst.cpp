@@ -72,7 +72,7 @@ bool isbinaryBst(node *root)
 }
 int main()
 {
-    cout << "Enter the data of root node" << endl;
+    cout << "Enter the data of root node or -1 for NULL" << endl;
     root = create();
     if (isbinaryBst(root))
         cout << "it is a BST" << endl;

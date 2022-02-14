@@ -11,8 +11,7 @@ struct node
     }
 };
 node *root = NULL;
-node *
-insert()
+node *insert()
 {
     int data;
     cin >> data;
@@ -40,7 +39,7 @@ bool ischildrenSum(node *root)
     if (sum == root->data && ischildrenSum(root->left) && ischildrenSum(root->right))
         return true;
     else
-        false;
+        return false;
 }
 
 void inorder(node *root)

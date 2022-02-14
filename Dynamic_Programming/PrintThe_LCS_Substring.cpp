@@ -1,6 +1,10 @@
 #include <iostream>
 #include <algorithm>
 using namespace std;
+
+//this is printing the longest common subsequence 
+//file name is wrong 
+
 int **LCS(string x, string y, int m, int n, int **dp)
 {
     for (int i = 1; i < m + 1; ++i)

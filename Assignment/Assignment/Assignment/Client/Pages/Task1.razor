@@ -2,74 +2,65 @@
 
 @inject HttpClient Http
 
-<h3>Task1</h3>
-<div class="row">
-    <div class="col-lg-3">
-        <EditForm Model="@email">
-            <div>
-                <label>From email :</label>
-                <div>
-                    <InputText @bind-Value="@email.FromEmail" />
-                </div>
-            </div>
-            <div>
-                <label>To email :</label>
-                <div>
-                    <InputText @bind-Value="@email.ToEmail" />
-                </div>
-            </div>
-            <div>
-                <label>Subject :</label>
-                <div>
-                    <InputText @bind-Value="@email.Subject" />
-                </div>
-            </div>
-            <div>
-                <label>Body :</label>
-                <div>
-                    <InputTextArea @bind-Value="@email.Body" />
-                </div>
-            </div>
-            <div>
-                <button type="submit" class="btn btn-success" @onclick="@sendmail">
-                    Send Email
-                </button>
-            </div>
-        </EditForm>
-    </div>
-    <div class="col-lg-9">
-        @if (emails == null)
-        {
-            <p><em>Loading...</em></p>}
-        else
-        {
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Id</th>
-                        <th>From</th>
-                        <th>To</th>
-                        <th>Date</th>
-                        <th>Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach (var mail in emails)
-                    {
-                    <tr>
-                        <td>@mail.ID</td>
-                        <td>@mail.FromEmail</td>
-                        <td>@mail.ToEmail</td>
-                        <td>@mail.Date.ToShortDateString()</td>
-                        <td style="@(mail.Status == "failed"? $"background:Red;" : $"background:green;")">@mail.Status</td>
-                    </tr>
-                    }
-                </tbody>
-            </table>
+<h3>Assignment : Send Emails</h3>
+<table class="table table-striped">
+    <div class="row">
+        <div class="col-lg-3">
+            <EditForm Model="@email">
+                <tr>
 
-        }
+                    <div>
+                        <td><label>From Emails </label></td> 
+                        <td>
+                            <div>
+                                <InputText @bind-Value="@email.FromEmail" />
+                            </div>
+                        </td>
+                    </div>
+                </tr>
+        <tr>
+           
+            <div>
+
+                <td><label>To List email :</label></td> 
+                <td><div>
+    <InputText @bind-Value="@email.ToEmail" />
+</div></td>
+                      </div>
+        </tr>
+
+                <tr>
+                    <div>
+                      <td>  <label>Heading :</label></td>
+                        <td><div>
+                            <InputText @bind-Value="@email.Subject" />
+                        </div>
+                        </td>
+                    </div>
+                </tr>
+                <tr>
+                <div>
+                   <td> <label>Content :</label></td>
+                    <td><div>
+                        <InputTextArea @bind-Value="@email.Body" />
+                    </div></td>
+                </div>
+                    </tr>
+    <tr>
+        <td>
+                <div>
+                    <button type="submit" class="btn btn-success" @onclick="@sendmail">
+                        Send Email
+                    </button>
+                </div>
+            </td>
+        </tr>
+            </EditForm>
+        </div>
+
     </div>
-</div>
+
+</table>
 
 
 @code {
