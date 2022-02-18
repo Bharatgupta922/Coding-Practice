@@ -103,7 +103,10 @@ void removeCycle(node *&head)
 }
 int main()
 {
-
+    #ifndef ONLINE_JUDGE
+    freopen("input.txt","r",stdin);
+    freopen("output.txt","w",stdout);
+    #endif 
     node *head = NULL;
     insertAtTail(head, 1);
     insertAtTail(head, 2);

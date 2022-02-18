@@ -1,4 +1,4 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 struct node
 {
@@ -41,6 +41,10 @@ bool isbalanced(node *root, int *height)
 }
 int main()
 {
+    #ifndef ONLINE_JUDGE
+    freopen("input.txt","r",stdin);
+    freopen("output.txt","w",stdout);
+    #endif 
     cout << "insert the root element" << endl;
     root = insert();
     int height = 0;
@@ -48,6 +52,6 @@ int main()
         cout << "balanced with height " << height << endl;
     else
         cout << "unbalanced with height " << height << endl;
-
+        
     return 0;
 }
