@@ -56,8 +56,7 @@ int main()
             {
                 y = false;
             }
-            if (y)
-                break;
+            break;
         }
     }
     if (s.empty() && y)
