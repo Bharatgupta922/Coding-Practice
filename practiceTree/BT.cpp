@@ -388,8 +388,15 @@ vector<int> diagonalView(node * root){
     queue<node*> q;
     q.push(root);
     while(!q.empty()){
-        
+        node * frontNode = q.front();
+        q.pop();
+        while(frontNode){
+            ans.push_back(frontNode->data);
+            if(frontNode->left)q.push(frontNode->left);
+            frontNode=frontNode->right;
+        }
     }
+    return ans;
 }
 int main(){
 
@@ -420,6 +427,7 @@ int main(){
     printvector(bottomView(root));
     printvector(leftView(root));
     printvector(rightView(root));
-    printvector(diagonalView(root));   
+    printvector(diagonalView(root));
+    
     return 0;
 }

@@ -28,7 +28,5 @@ bool solve(string s){
 int main(){
     string s =  "((b+c))";
     solve(s)?cout<<"Yes":cout<<"No";
-
-
     return 0;
 }

@@ -145,10 +145,10 @@ void powerOfstl()
     // add[10,20]
     // add[30,400]
     // add[401,450]
-    //so the pairs are not overlapping
-    //now let say that i/p is 13
-    //then o/p is [10,20]
-    //like for i/p  400 the o/p is [30,400]
+    // so the pairs are not overlapping
+    // now let say that i/p is 13
+    // then o/p is [10,20]
+    // like for i/p  400 the o/p is [30,400]
     set<pair<int, int>> S;
 
     S.insert({501, 670});

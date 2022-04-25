@@ -28,7 +28,6 @@ string infixToPostFix(string y)
         {
             if (!s.empty() || y[i] == '(')
                 s.push(y[i]);
-           
         }
     }
 }
@@ -36,8 +35,8 @@ int main()
 {
     string y;
     cin >> y;
-    y = infixToPostFix(y);
-    cout << "the postfix expression is ---" << endl
-         << y;
+    string ans ;
+    ans = infixToPostFix(y);
+    cout << "the postfix expression is ---" << ans;
     return 0;
 }

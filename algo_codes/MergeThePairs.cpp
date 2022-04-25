@@ -16,7 +16,6 @@ void MergeOverlaps(vector<pair<int, int>> sp, int n)
     if (sp.size() > 0)
     {
         vector<pair<int, int>> result;
-        pair<int, int> temp = *(sp.begin());
         sort(sp.begin(), sp.end());
         result.push_back(sp[0]);
         for (int i = 1; i < sp.size(); ++i)

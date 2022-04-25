@@ -21,7 +21,7 @@ bool isSafe(int board[][10], int i, int j, int n)
     {
         if (board[x][y] == 1)
         {
-            return true;
+            return false;
         }
     }
     return true;
