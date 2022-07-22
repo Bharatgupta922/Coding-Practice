@@ -1,60 +1,69 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-//balanced or not paranthesis
+// balanced or not paranthesis
 
-bool balanced(string a){
-stack<char> s;
-char x;
-bool ans = true;
-for(int i = 0 ;  i < s.size() && ans ;++i){
-    if(a[i] == '[' || a[i] == '{' || a[i] == '('){
-        s.push(a[i]);
-        continue;
-    }
-    if(s.empty()){
-        ans = false;
-        break;
-    }
-    switch (a[i])
+bool balanced(string a)
+{
+    stack<char> s;
+    char x;
+    bool ans = true;
+    for (int i = 0; i < s.size() && ans; ++i)
     {
-    case ')':
-        x = s.top();
-        s.pop();
-        if(x == '{' || x == '['){
-            ans = false;
+        if (a[i] == '[' || a[i] == '{' || a[i] == '(')
+        {
+            s.push(a[i]);
+            continue;
         }
-        break;
-    case '}':
-        x = s.top();
-        s.pop();
-        if(x == '(' || x == '['){
+        if (s.empty())
+        {
             ans = false;
+            break;
         }
-        break;
-    case ']':
-        x = s.top();
-        s.pop();
-        if(x == '(' || x == '{'){
-            ans = false;
+        switch (a[i])
+        {
+        case ')':
+            x = s.top();
+            s.pop();
+            if (x == '{' || x == '[')
+            {
+                ans = false;
+            }
+            break;
+        case '}':
+            x = s.top();
+            s.pop();
+            if (x == '(' || x == '[')
+            {
+                ans = false;
+            }
+            break;
+        case ']':
+            x = s.top();
+            s.pop();
+            if (x == '(' || x == '{')
+            {
+                ans = false;
+            }
+            break;
         }
-        break;
     }
+    if (s.empty() && ans)
+        return true;
+    return false;
 }
-if(s.empty() && ans)return true;
-return false;
-}
-int main(){
-// 6
-// 3 2 6 5 0 3
+int main()
+{
+    // 6
+    // 3 2 6 5 0 3
 
-    #ifndef ONLINE_MODE
-       freopen("input.txt" , "r", stdin);
-       freopen("output.txt","w",stdout); 
-    #endif
+    // #ifndef ONLINE_MODE
+    //    freopen("input.txt" , "r", stdin);
+    //    freopen("output.txt","w",stdout);
+    // #endif
 
     string s = "[[[]]{}()({}{[]})]";
 
-    balanced(s)?cout<<"balanced":cout<<"not balanced";
-   
+    balanced(s) ? cout << "balanced" : cout << "not balanced";
+
     return 0;
 }
