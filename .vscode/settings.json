@@ -1,6 +1,10 @@
 {
     "C_Cpp.errorSquiggles": "Enabled",
     "files.associations": {
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "ostream": "cpp",
+        "bitset": "cpp",
+        "algorithm": "cpp",
+        "chrono": "cpp"
     }
 }
