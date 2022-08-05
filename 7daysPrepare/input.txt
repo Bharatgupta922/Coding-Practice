@@ -1,3 +1,7 @@
-3
-1House 2Road 7Land
-Happy Sad Happy
+5 6 
+0 1
+1 2
+2 3
+3 1
+3 4
+0 4
