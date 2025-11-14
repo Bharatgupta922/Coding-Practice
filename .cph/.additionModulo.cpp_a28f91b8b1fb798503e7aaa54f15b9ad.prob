@@ -1,0 +1,1 @@
+{"name":"Local: additionModulo","url":"c:\\projects\\Coding-Practice\\additionModulo.cpp","tests":[{"id":1712592642293,"input":"10000000000000\n10000000000000\n100000000000000","output":"20000000000000"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\projects\\Coding-Practice\\additionModulo.cpp","group":"local","local":true}

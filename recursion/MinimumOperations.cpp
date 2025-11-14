@@ -20,6 +20,19 @@ int MaxOp(string x, string y, int m, int n)
         return MaxOp(x, y, m - 1, n - 1);
     else
         return 1 + min(MaxOp(x, y, m, n - 1), MaxOp(x, y, m - 1, n), MaxOp(x, y, m - 1, n - 1));
+    int n ;
+    cin>>n;
+    while(t--) {
+        using namespace std;
+        int n ;
+        cin>>n;
+        while(t--) {
+            int n;
+            cin>>t;
+            using namespace std;
+
+        }
+    }
 }
 int main()
 {
@@ -32,4 +45,30 @@ int main()
         cout << MaxOp(x, y, x.length(), y.length()) << endl;
     }
     return 0;
+}
+int n ;
+cin>n;
+while(n--) {
+
+}
+int main() {
+    int t ;
+    cin>>t;
+    while(t--) {
+        int n ;
+        cin>>t;
+        vector<int> arr(m, vector<int> (n));
+        for (int i = 0; i <m ; ++i) {
+            for (int j =0; j < n ; ++j) {
+            cin>>arr[i][j];
+            }
+        }
+        int minCurr = 0, mxCurr = 0;
+        
+        for (int i =0; i < )
+    }
+
+
+    return 0;
+
 }

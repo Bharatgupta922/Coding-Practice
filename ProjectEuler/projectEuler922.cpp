@@ -13,7 +13,7 @@ int fibonnaci(int n)
 }
 void ques2()
 {
-    long int sum = 0, i = 1;
+    long long int sum = 0, i = 1;
     while (sum < 4000000)
     {
         if (fibonnaci(i) % 2 == 0)
@@ -24,8 +24,8 @@ void ques2()
 }
 void ques3()
 {
-    long int max = INT_MIN, n = 600851475143;
-    for (long int i = 2; i <= n; i++)
+    long long int max = INT_MIN, n = 63;
+    for (long long int i = 2; i <= n; i++)
     {
         while (n % i == 0)
         {
@@ -39,7 +39,7 @@ void ques3()
 void ques4()
 {
 }
-bool check(long int n)
+bool check(long long int n)
 {
     for (int i = 2; i <= 20; i++)
         if (n % i != 0)
@@ -48,7 +48,7 @@ bool check(long int n)
 }
 void ques5()
 {
-    for (long int i = 21;; i++)
+    for (long long int i = 21;; i++)
     {
         if (check(i))
         {
@@ -59,8 +59,8 @@ void ques5()
 }
 
 // void ques6(){
-//  long int sum1  = pow((100*(100-1))/2,2);
-//  long int sum2 =  (100 * (100 -1) * (2*100 -1))/6;
+//  long long int sum1  = pow((100*(100-1))/2,2);
+//  long long int sum2 =  (100 * (100 -1) * (2*100 -1))/6;
 //  cout<<sum2-sum1;
 // }
 bool isPrime(int n)
@@ -119,7 +119,7 @@ void ques9()
 }
 void ques10()
 {
-    long int n = 2000000, sum = 0;
+    long long int n = 2000000, sum = 0;
     for (int i = 2; i < n; i++)
         if (isPrime(i))
             sum += i;
@@ -128,7 +128,7 @@ void ques10()
 // void ques11(){
 //     int a[20][20];
 //     for(int i=0;i<20;i++)for(int j = 0;j<20;j++)cin>>a[i][j];
-//     long int sum1 = INT_MIN;
+//     long long int sum1 = INT_MIN;
 //     int count = 0;
 //     for(int i=0;i<20;i++){
 //         for(int j=0;j<20;j++){
@@ -154,7 +154,7 @@ void ques10()
 //     }
 
 // }
-long int factorial(long int n)
+long long int factorial(long long int n)
 {
     if (n == 0)
         return 1;
@@ -162,11 +162,11 @@ long int factorial(long int n)
 }
 void ques20()
 {
-    long int fact = factorial(100), result = 0;
+    long long int fact = factorial(100), result = 0;
     cout << fact << endl;
     while (fact > 0)
     {
-        long int b = fact % 10;
+        long long int b = fact % 10;
         result += b;
         fact /= 10;
     }

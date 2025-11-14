@@ -67,5 +67,6 @@ int main(){
     node * root = NULL;
     root = buildTree(root);
     printvector(verticalOrderTraversal(root));
+
     return 0;
 }

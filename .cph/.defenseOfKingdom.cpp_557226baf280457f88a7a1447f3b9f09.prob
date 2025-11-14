@@ -1,0 +1,1 @@
+{"name":"Local: defenseOfKingdom","url":"c:\\projects\\Coding-Practice\\defenseOfKingdom.cpp","tests":[{"id":1713374808985,"input":"1\n15 8 3\n3 8\n11 2\n8 6","output":"12"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\projects\\Coding-Practice\\defenseOfKingdom.cpp","group":"local","local":true}

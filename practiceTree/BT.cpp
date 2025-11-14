@@ -428,6 +428,6 @@ int main(){
     printvector(leftView(root));
     printvector(rightView(root));
     printvector(diagonalView(root));
-    
+
     return 0;
 }
